@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind/output.css">
+    <style>
+        .ownershipStatus button.active {
+            background-color: #3C6AB3;
+            color: white;
+            border: none;
+        }
+        .ownershipStatus button {
+            border: solid 1px #737E85;
+            color: #737E85;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body dir="rtl" class="font-yekan">
+    <div class="pt-8">
+        <header>
+            <div class="container flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="./assets/images/logo.svg" alt="" class="ml-2">
+                    <div>
+                        <h3 class="text-[#0E2B3D] text-2xl font-extrabold">دکتر تامین</h3>
+                        <span class="text-[#737E85] text-sm font-extralight">تامین آسایش پایدار</span>
+                    </div>
+                </div>
+                <button
+                    class="flex items-center h-fit py-2 px-3 text-[#3C6AB3] border-solid border-2 border-[#3C6AB3] rounded-md">
+                    <img src="./assets/icons/phone.svg" alt="" class="ml-3
+                    ">
+                    پشتیبانی
+                    <span class="sm:block hidden mr-1">۰۲۱-۴۸۴۳۶</span>
+                </button>
+            </div>
+        </header>
+        <section class="pb-28 md:pt-28 pt-16">
+            <img src="./assets/images/picture1.png" alt="" class="w-full md:mb-14 mb-10">
+            <div class="container">
+                <div class="flex md:flex-row flex-col justify-between md:items-end items-start">
+                    <div>
+                        <h1 class="md:mb-7 mb-3 text-[#0E2B3D] xl:text-6xl lg:text-5xl md:text-4xl text-3xl font-black
+                        ">اخذ نمایندگی دکتر تامین</h1>
+                        <p class="md:w-[70%] w-full text-[#17384C] xl:text-xl lg:text-lg text-base leading-7 mb-6">
+                            در صورت درخواست نمایندگی دکتر تامین لطفا اطلاعات خود را در فرم مورد نظر را وارد کنید.
+                        </p>
+                    </div>
+                    <button class="self-end pt-2 pb-1.5 px-6 bg-[#4DD3AD] text-white rounded-lg">ثبت درخواست</button>
+                </div>
+            </div>
+        </section>
+        <section class="py-20 bg-[#F5F6F7]">
+            <div class="container">
+                <div class="w-fit flex flex-col items-center mx-auto mb-14">
+                    <h2 class="md:mb-4 mb-2.5 text-[#0E2B3D] md:text-4xl text-xl font-bold">لطفا اطلاعات خود را با دقت
+                        وارد کنید.</h2>
+                    <p class="w-full text-[#737E85] md:text-lg text-base md:text-right text-center">
+                        پر کردن همه‌ی فیلدها اجباری است.
+                    </p>
+                </div>
+                <div class="flex justify-between">
+                    <div class="md:w-[40%] w-full">
+                        <div class="mb-8">
+                            <h5 class="text-[#3C6AB3] text-lg font-bold mb-5">مشخصات فردی</h5>
+                            <input type="text" placeholder="نام و نام خانوادگی"
+                                class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                            <input type="text" placeholder="کد ملی"
+                                class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                            <input type="text" placeholder="سال تولد"
+                                class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                        </div>
+                        <div class="mb-8">
+                            <h5 class="text-[#3C6AB3] text-lg font-bold mb-5">مشخصات فروشگاه</h5>
+                            <div class="province relative">
+                                <button
+                                    class="flex justify-between w-full bg-white text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                    onclick="showDropdown('province')">
+                                    <span>استان</span>
+                                    <img src="./assets/icons/arrow-down.svg" alt="" class="arrow-down">
+                                </button>
+                                <div
+                                    class="dropdown absolute top-[60px] right-0 left-0 z-10 hidden bg-white rounded-lg shadow-lg">
+                                    <div
+                                        class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                        تهران
+                                    </div>
+                                    <div
+                                        class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                        مشهد
+                                    </div>
+                                    <div class="w-full text-[#737E85] px-6 py-4 cursor-pointer">
+                                        اصفهان
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="city relative">
+                                <button
+                                    class="flex justify-between w-full bg-white text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                    onclick="showDropdown('city')">
+                                    <span>شهر</span>
+                                    <img src="./assets/icons/arrow-down.svg" alt="" class="arrow-down">
+                                </button>
+                                <div
+                                    class="dropdown absolute top-[60px] right-0 left-0 z-10 hidden bg-white rounded-lg shadow-lg">
+                                    <div
+                                        class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                        تهران
+                                    </div>
+                                    <div
+                                        class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                        مشهد
+                                    </div>
+                                    <div class="w-full text-[#737E85] px-6 py-4 cursor-pointer">
+                                        اصفهان
+                                    </div>
+                                </div>
+                            </div>
+                            <input type="text" placeholder="نام فروشگاه"
+                                class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                            <input type="text" placeholder="مساحت فروشگاه (متر مربع)"
+                                class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                            <input type="text" placeholder="نشانی فروشگاه"
+                                class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-7 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                            <div class="flex sm:flex-row flex-col justify-between items-center w-full">
+                                <span class="self-start text-[#737E85] sm:mb-0 mb-3">وضعیت مالکیت</span>
+                                <div class="ownershipStatus flex gap-3">
+                                    <button class="owner active w-28 pt-2 pb-1.5 rounded-full" onclick="setOwnershipStatus('owner')">
+                                        مالک
+                                    </button>
+                                    <button
+                                        class="rental w-28 pt-2 pb-1.5 rounded-full" onclick="setOwnershipStatus('rental')">
+                                        استیجاری
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-8">
+                            <h5 class="text-[#3C6AB3] text-lg font-bold mb-5">اطلاعات تماس</h5>
+                            <input type="text" placeholder="شماره تماس ثابت"
+                                class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                            <input type="text" placeholder="شماره همراه"
+                                class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                        </div>
+                        <div class="mb-8">
+                            <h5 class="text-[#3C6AB3] text-lg font-bold mb-3">حوزه‌های همکاری</h5>
+                            <p class="text-[#0E2B3D] mb-2">علاقه مند به همکاری در کدام نوع از حوزه محصولات ساختمانی می
+                                باشید؟
+                            </p>
+                            <p class="text-[#737E85] mb-5">لطفا هر موردی که مد نظر دارید را در فیلد زیر بنویسید.</p>
+                            <textarea rows="5" placeholder="حوزه‌های همکاری"
+                                class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                style="resize: none"></textarea>
+                        </div>
+                        <div class="mb-8">
+                            <h5 class="text-[#3C6AB3] text-lg font-bold mb-3">توضیحات بیشتر</h5>
+                            <p class="text-[#0E2B3D] mb-2">در صورتی که نیاز به توضیح بیشتری دارید آن را وارد کنید.</p>
+                            <textarea rows="7" placeholder="توضیحات بیشتر"
+                                class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                style="resize: none"></textarea>
+                        </div>
+                        <button class="w-full bg-[#4DD3AD] text-white font-bold pt-3 pb-2.5 rounded-xl">ثبت
+                            درخواست</button>
+                    </div>
+                    <div class="sticky top-[20px] w-[40%] md:block hidden h-fit flex-col items-center bg-white text-[#737E85] px-6 py-8 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"">
+                        <h3 class=" text-[#9BA3A8] text-center text-4xl font-black mb-4">اخذ نمایندگی دکتر تامین</h3>
+                        <p class="text-[#17384C] leading-7 mb-6">
+                            در صورت درخواست نمایندگی دکتر تامین لطفا اطلاعات خود را در فرم مورد نظر را وارد کنید.
+                        </p>
+                        <img src="./assets/images/picture2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-10 bg-[#3C6AB3]">
+            <div class="container flex md:flex-row flex-col justify-between items-center">
+                <div class="flex items-center md:mb-0 mb-7">
+                    <img src="./assets/images/logo2.svg" alt="" class="ml-2">
+                    <div>
+                        <h3 class="text-white text-2xl font-semibold">دکتر تامین</h3>
+                        <span class="text-white text-sm font-light">تامین آسایش پایدار</span>
+                    </div>
+                </div>
+                <div class="flex flex-col md:items-end items-center">
+                    <p class="text-white mb-3">سوالات خود را با همکاران ما در میان بگذارید.</p>
+                    <button
+                        class="w-fit flex items-center h-fit py-2 px-3 text-white border-solid border-[1px] border-white rounded-md">
+                        <img src="./assets/icons/phone.svg" alt="" class="ml-3 brightness-[100]
+                    ">
+                        پشتیبانی ۴۸۴۳۶-۰۲۱
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script>
+    function showDropdown(name) {
+        const dropdown = document.querySelector(`.${name} > .dropdown`);
+        if (dropdown.style.display == 'none') {
+            setTimeout(() => {
+                dropdown.style.display = 'block';
+            }, 1)
+        }
+    }
+
+    function setOwnershipStatus(name){
+        if (name == 'owner'){
+            document.querySelector('.ownershipStatus .rental').classList.remove('active');
+            document.querySelector('.ownershipStatus .owner').classList.add('active');
+        } else if (name == 'rental') {
+            document.querySelector('.ownershipStatus .owner').classList.remove('active');
+            document.querySelector('.ownershipStatus .rental').classList.add('active');
+        }
+    }
+
+
+    document.addEventListener('click', closeDropdowns)
+    function closeDropdowns() {
+        const dropdowns = document.getElementsByClassName('dropdown');
+        for (let i = 0; i < dropdowns.length; i++) {
+            dropdowns[i].style.display = 'none';
+        }
+    }
+</script>
+
+</html>

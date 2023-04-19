@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tailwind/output.css">
+    <title>Document</title>
+</head>
+
+<body dir="rtl" class="font-yekan">
+    <div class="pt-8">
+        <header>
+            <div class="container flex justify-between items-center">
+                <div class="flex items-center">
+                    <img src="./assets/images/logo.svg" alt="" class="ml-2">
+                    <div>
+                        <h3 class="text-[#0E2B3D] text-2xl font-extrabold">دکتر تامین</h3>
+                        <span class="text-[#737E85] text-sm font-extralight">تامین آسایش پایدار</span>
+                    </div>
+                </div>
+                <button
+                    class="flex items-center h-fit py-2 px-3 text-[#3C6AB3] border-solid border-2 border-[#3C6AB3] rounded-md">
+                    <img src="./assets/icons/phone.svg" alt="" class="ml-3
+                    ">
+                    پشتیبانی
+                    <span class="sm:block hidden mr-1">۰۲۱-۴۸۴۳۶</span>
+                </button>
+            </div>
+        </header>
+        <section class="py-28">
+            <div class="container">
+                <div
+                    class="relative flex md:flex-row flex-col justify-between md:items-end items-start bg-[#ECF0F7] md:p-12 p-7 rounded-3xl">
+                    <div
+                        class="absolute md:inset-x-[-15px] inset-x-[-10px] top-[50%] z-[-1] translate-y-[-50%] h-[70%] bg-[#3C6AB3] rounded-3xl">
+                    </div>
+                    <div>
+                        <h1 class="md:mb-7 mb-3 text-[#0E2B3D] lg:text-5xl md:text-4xl text-3xl font-black
+                        ">پروژه‌های همکار با دکتر تامین</h1>
+                        <p class="w-[70%] text-[#17384C] xl:text-xl lg:text-lg text-base md:leading-8 leading-7 mb-0">
+                            لطفا اطلاعات مربوط به ۳ تا ۵ پروژه که دکتر تامین در تامین مصالح و تجهیزات آن همکاری داشته را
+                            در فرم زیر وارد کنید.
+                        </p>
+                    </div>
+                    <button class="self-end pt-2 pb-1.5 px-6 bg-[#4DD3AD] text-white rounded-lg">ثبت پروژه</button>
+                </div>
+            </div>
+        </section>
+        <section class="py-20">
+            <div class="container">
+                <div class="w-fit flex flex-col items-center mx-auto mb-14">
+                    <h2 class="md:mb-4 mb-2.5 text-[#0E2B3D] md:text-4xl text-xl font-bold">لطفا اطلاعات پروژه‌ها را
+                        وارد کنید.</h2>
+                    <p class="w-full text-[#737E85] md:text-lg text-base text-center">
+                        پر کردن همه‌ی فیلدها اجباری است.
+                    </p>
+                </div>
+                <div class="flex justify-between">
+                    <div class="md:w-[40%] w-full">
+                        <div class="number1 bg-[#F5F6F7] md:p-7 p-5 mb-5 shadow-md rounded-xl">
+                            <button class="flex justify-between w-full p-4 bg-[#3C6AB3] text-white rounded-xl"
+                                onclick="showBox('number1')">
+                                <h4 class="flex items-center text-2xl font-bold">پروژه شماره
+                                    <div
+                                        class="flex justify-center items-center w-6 h-6 mr-2 bg-[#4DD3AD] text-base font-normal rounded-md">
+                                        ۱</div>
+                                </h4>
+                                <img src="./assets/icons/arrow-down2.svg" alt="">
+                            </button>
+                            <div class="content hidden mt-14">
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-5">اطلاعات کلی پروژه</h5>
+                                    <input type="text" placeholder="عنوان پروژه"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="نام کارفرما"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                </div>
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-5">مشخصات پروژه</h5>
+                                    <input type="text" placeholder="مساحت زمین"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="مساحت سطح اشتغال بنا"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="تعداد طبقه"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="تعداد واحد"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <div class="province relative">
+                                        <button
+                                            class="flex justify-between w-full bg-white text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                            onclick="showDropdown('province')">
+                                            <span>استان</span>
+                                            <img src="./assets/icons/arrow-down.svg" alt="" class="arrow-down">
+                                        </button>
+                                        <div
+                                            class="dropdown absolute top-[60px] right-0 left-0 z-10 hidden bg-white rounded-lg shadow-lg">
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                تهران
+                                            </div>
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                مشهد
+                                            </div>
+                                            <div class="w-full text-[#737E85] px-6 py-4 cursor-pointer">
+                                                اصفهان
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="city relative">
+                                        <button
+                                            class="flex justify-between w-full bg-white text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                            onclick="showDropdown('city')">
+                                            <span>شهر</span>
+                                            <img src="./assets/icons/arrow-down.svg" alt="" class="arrow-down">
+                                        </button>
+                                        <div
+                                            class="dropdown absolute top-[60px] right-0 left-0 z-10 hidden bg-white rounded-lg shadow-lg">
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                تهران
+                                            </div>
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                مشهد
+                                            </div>
+                                            <div class="w-full text-[#737E85] px-6 py-4 cursor-pointer">
+                                                اصفهان
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-3">تجهیزات و مصالح تامین شده</h5>
+                                    <textarea rows="5" placeholder="مصالح و تجهیزات تامید شده توسط دکتر تامین"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                        style="resize: none"></textarea>
+                                    <textarea rows="5" placeholder="برندهای تامین شده"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                        style="resize: none"></textarea>
+                                </div>
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-4">توضیحات پروژه</h5>
+                                    <p class="text-[#0E2B3D] mb-6">۳ عکس باکیفیت از پروژه را بارگذاری کنید.</p>
+                                    <div class="flex gap-4">
+                                        <div>
+                                            <label for="picture-input"
+                                                class="flex justify-center items-center w-24 h-24 border-dashed border-[#3C6AB3] border-[3px] rounded-xl cursor-pointer">
+                                                <img src="./assets/icons/picture.svg" alt="">
+                                            </label>
+                                            <input type="file" id="picture-input" class="hidden">
+                                        </div>
+                                        <div>
+                                            <label for="picture-input"
+                                                class="flex justify-center items-center w-24 h-24 border-dashed border-[#3C6AB3] border-[3px] rounded-xl cursor-pointer">
+                                                <img src="./assets/icons/picture.svg" alt="">
+                                            </label>
+                                            <input type="file" id="picture-input" class="hidden">
+                                        </div>
+                                        <div>
+                                            <label for="picture-input"
+                                                class="flex justify-center items-center w-24 h-24 border-dashed border-[#3C6AB3] border-[3px] rounded-xl cursor-pointer">
+                                                <img src="./assets/icons/picture.svg" alt="">
+                                            </label>
+                                            <input type="file" id="picture-input" class="hidden">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="w-full bg-[#4DD3AD] text-white font-bold pt-3 pb-2.5 rounded-xl">ثبت
+                                    درخواست</button>
+                            </div>
+                        </div>
+                        <div class="number2 bg-[#F5F6F7] md:p-7 p-5 mb-5 shadow-md rounded-xl">
+                            <button class="flex justify-between w-full p-4 bg-[#3C6AB3] text-white rounded-xl"
+                                onclick="showBox('number2')">
+                                <h4 class="flex items-center text-2xl font-bold">پروژه شماره
+                                    <div
+                                        class="flex justify-center items-center w-6 h-6 mr-2 bg-[#4DD3AD] text-base font-normal rounded-md">
+                                        ۲</div>
+                                </h4>
+                                <img src="./assets/icons/arrow-down2.svg" alt="">
+                            </button>
+                            <div class="content hidden mt-14">
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-5">اطلاعات کلی پروژه</h5>
+                                    <input type="text" placeholder="عنوان پروژه"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="نام کارفرما"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                </div>
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-5">مشخصات پروژه</h5>
+                                    <input type="text" placeholder="مساحت زمین"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="مساحت سطح اشتغال بنا"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="تعداد طبقه"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="تعداد واحد"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <div class="province relative">
+                                        <button
+                                            class="flex justify-between w-full bg-white text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                            onclick="showDropdown('province')">
+                                            <span>استان</span>
+                                            <img src="./assets/icons/arrow-down.svg" alt="" class="arrow-down">
+                                        </button>
+                                        <div
+                                            class="dropdown absolute top-[60px] right-0 left-0 z-10 hidden bg-white rounded-lg shadow-lg">
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                تهران
+                                            </div>
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                مشهد
+                                            </div>
+                                            <div class="w-full text-[#737E85] px-6 py-4 cursor-pointer">
+                                                اصفهان
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="city relative">
+                                        <button
+                                            class="flex justify-between w-full bg-white text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                            onclick="showDropdown('city')">
+                                            <span>شهر</span>
+                                            <img src="./assets/icons/arrow-down.svg" alt="" class="arrow-down">
+                                        </button>
+                                        <div
+                                            class="dropdown absolute top-[60px] right-0 left-0 z-10 hidden bg-white rounded-lg shadow-lg">
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                تهران
+                                            </div>
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                مشهد
+                                            </div>
+                                            <div class="w-full text-[#737E85] px-6 py-4 cursor-pointer">
+                                                اصفهان
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-3">تجهیزات و مصالح تامین شده</h5>
+                                    <textarea rows="5" placeholder="مصالح و تجهیزات تامید شده توسط دکتر تامین"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                        style="resize: none"></textarea>
+                                    <textarea rows="5" placeholder="برندهای تامین شده"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                        style="resize: none"></textarea>
+                                </div>
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-4">توضیحات پروژه</h5>
+                                    <p class="text-[#0E2B3D] mb-6">۳ عکس باکیفیت از پروژه را بارگذاری کنید.</p>
+                                    <div class="flex gap-4">
+                                        <div>
+                                            <label for="picture-input"
+                                                class="flex justify-center items-center w-24 h-24 border-dashed border-[#3C6AB3] border-[3px] rounded-xl cursor-pointer">
+                                                <img src="./assets/icons/picture.svg" alt="">
+                                            </label>
+                                            <input type="file" id="picture-input" class="hidden">
+                                        </div>
+                                        <div>
+                                            <label for="picture-input"
+                                                class="flex justify-center items-center w-24 h-24 border-dashed border-[#3C6AB3] border-[3px] rounded-xl cursor-pointer">
+                                                <img src="./assets/icons/picture.svg" alt="">
+                                            </label>
+                                            <input type="file" id="picture-input" class="hidden">
+                                        </div>
+                                        <div>
+                                            <label for="picture-input"
+                                                class="flex justify-center items-center w-24 h-24 border-dashed border-[#3C6AB3] border-[3px] rounded-xl cursor-pointer">
+                                                <img src="./assets/icons/picture.svg" alt="">
+                                            </label>
+                                            <input type="file" id="picture-input" class="hidden">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="w-full bg-[#4DD3AD] text-white font-bold pt-3 pb-2.5 rounded-xl">ثبت
+                                    درخواست</button>
+                            </div>
+                        </div>
+                        <div class="number3 bg-[#F5F6F7] md:p-7 p-5 mb-5 shadow-md rounded-xl">
+                            <button class="flex justify-between w-full p-4 bg-[#3C6AB3] text-white rounded-xl"
+                                onclick="showBox('number3')">
+                                <h4 class="flex items-center text-2xl font-bold">پروژه شماره
+                                    <div
+                                        class="flex justify-center items-center w-6 h-6 mr-2 bg-[#4DD3AD] text-base font-normal rounded-md">
+                                        ۳</div>
+                                </h4>
+                                <img src="./assets/icons/arrow-down2.svg" alt="">
+                            </button>
+                            <div class="content hidden mt-14">
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-5">اطلاعات کلی پروژه</h5>
+                                    <input type="text" placeholder="عنوان پروژه"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="نام کارفرما"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                </div>
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-5">مشخصات پروژه</h5>
+                                    <input type="text" placeholder="مساحت زمین"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="مساحت سطح اشتغال بنا"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="تعداد طبقه"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <input type="text" placeholder="تعداد واحد"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none">
+                                    <div class="province relative">
+                                        <button
+                                            class="flex justify-between w-full bg-white text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                            onclick="showDropdown('province')">
+                                            <span>استان</span>
+                                            <img src="./assets/icons/arrow-down.svg" alt="" class="arrow-down">
+                                        </button>
+                                        <div
+                                            class="dropdown absolute top-[60px] right-0 left-0 z-10 hidden bg-white rounded-lg shadow-lg">
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                تهران
+                                            </div>
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                مشهد
+                                            </div>
+                                            <div class="w-full text-[#737E85] px-6 py-4 cursor-pointer">
+                                                اصفهان
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="city relative">
+                                        <button
+                                            class="flex justify-between w-full bg-white text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                            onclick="showDropdown('city')">
+                                            <span>شهر</span>
+                                            <img src="./assets/icons/arrow-down.svg" alt="" class="arrow-down">
+                                        </button>
+                                        <div
+                                            class="dropdown absolute top-[60px] right-0 left-0 z-10 hidden bg-white rounded-lg shadow-lg">
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                تهران
+                                            </div>
+                                            <div
+                                                class="w-full text-[#737E85] px-6 py-4 border-solid border-b-[1px] border-gray-200 cursor-pointer">
+                                                مشهد
+                                            </div>
+                                            <div class="w-full text-[#737E85] px-6 py-4 cursor-pointer">
+                                                اصفهان
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-3">تجهیزات و مصالح تامین شده</h5>
+                                    <textarea rows="5" placeholder="مصالح و تجهیزات تامید شده توسط دکتر تامین"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                        style="resize: none"></textarea>
+                                    <textarea rows="5" placeholder="برندهای تامین شده"
+                                        class="w-full bg-white placeholder:text-[#737E85] px-6 py-4 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"
+                                        style="resize: none"></textarea>
+                                </div>
+                                <div class="mb-8">
+                                    <h5 class="text-[#3C6AB3] text-lg font-bold mb-4">توضیحات پروژه</h5>
+                                    <p class="text-[#0E2B3D] mb-6">۳ عکس باکیفیت از پروژه را بارگذاری کنید.</p>
+                                    <div class="flex gap-4">
+                                        <div>
+                                            <label for="picture-input"
+                                                class="flex justify-center items-center w-24 h-24 border-dashed border-[#3C6AB3] border-[3px] rounded-xl cursor-pointer">
+                                                <img src="./assets/icons/picture.svg" alt="">
+                                            </label>
+                                            <input type="file" id="picture-input" class="hidden">
+                                        </div>
+                                        <div>
+                                            <label for="picture-input"
+                                                class="flex justify-center items-center w-24 h-24 border-dashed border-[#3C6AB3] border-[3px] rounded-xl cursor-pointer">
+                                                <img src="./assets/icons/picture.svg" alt="">
+                                            </label>
+                                            <input type="file" id="picture-input" class="hidden">
+                                        </div>
+                                        <div>
+                                            <label for="picture-input"
+                                                class="flex justify-center items-center w-24 h-24 border-dashed border-[#3C6AB3] border-[3px] rounded-xl cursor-pointer">
+                                                <img src="./assets/icons/picture.svg" alt="">
+                                            </label>
+                                            <input type="file" id="picture-input" class="hidden">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="w-full bg-[#4DD3AD] text-white font-bold pt-3 pb-2.5 rounded-xl">ثبت
+                                    درخواست</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sticky top-[20px] w-[40%] md:block hidden h-fit flex-col items-center bg-[#3C6AB3] text-[#737E85] px-6 py-8 mb-4 rounded-lg shadow-[0px_2px_8px_rgba(0,0,0,0.05)] outline-none"">
+                        <h3 class=" text-white text-center text-4xl font-black mb-7">پروژه‌های همکار با دکتر تامین</h3>
+                        <p class="text-white font-thin leading-7 mb-6">
+                            لطفا اطلاعات مربوط به ۳ تا ۵ پروژه که دکتر تامین در تامین مصالح و تجهیزات آن همکاری داشته را
+                            در فرم زیر وارد کنید.
+                        </p>
+                        <img src="./assets/images/picture2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="py-10 bg-[#3C6AB3]">
+            <div class="container flex md:flex-row flex-col justify-between items-center">
+                <div class="flex items-center md:mb-0 mb-7">
+                    <img src="./assets/images/logo2.svg" alt="" class="ml-2">
+                    <div>
+                        <h3 class="text-white text-2xl font-semibold">دکتر تامین</h3>
+                        <span class="text-white text-sm font-light">تامین آسایش پایدار</span>
+                    </div>
+                </div>
+                <div class="flex flex-col md:items-end items-center">
+                    <p class="text-white mb-3">سوالات خود را با همکاران ما در میان بگذارید.</p>
+                    <button
+                        class="w-fit flex items-center h-fit py-2 px-3 text-white border-solid border-[1px] border-white rounded-md">
+                        <img src="./assets/icons/phone.svg" alt="" class="ml-3 brightness-[100]
+                    ">
+                        پشتیبانی ۴۸۴۳۶-۰۲۱
+                    </button>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+<script>
+    function showDropdown(name) {
+        const dropdown = document.querySelector(`.${name} > .dropdown`);
+        if (dropdown.style.display == 'none') {
+            setTimeout(() => {
+                dropdown.style.display = 'block';
+            }, 1)
+        }
+    }
+
+    function setOwnershipStatus(name) {
+        if (name == 'owner') {
+            document.querySelector('.ownershipStatus .rental').classList.remove('active');
+            document.querySelector('.ownershipStatus .owner').classList.add('active');
+        } else if (name == 'rental') {
+            document.querySelector('.ownershipStatus .owner').classList.remove('active');
+            document.querySelector('.ownershipStatus .rental').classList.add('active');
+        }
+    }
+
+    document.addEventListener('click', closeDropdowns)
+    function closeDropdowns() {
+        const dropdowns = document.getElementsByClassName('dropdown');
+        for (let i = 0; i < dropdowns.length; i++) {
+            dropdowns[i].style.display = 'none';
+        }
+    }
+
+
+    function showBox(number) {
+        const box = document.querySelector(`.${number} .content`);
+
+        if (box.classList.contains('hidden')) {
+            box.classList.remove('hidden');
+            box.classList.add('block');
+        } else {
+            box.classList.remove('block');
+            box.classList.add('hidden');
+        }
+    }
+
+</script>
+
+</html>
